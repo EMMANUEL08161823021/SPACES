@@ -93,8 +93,7 @@ const ResponsiveVideo = ({ poster = "/assets/video-poster.jpg", webm = "/assets/
     if (typeof window !== "undefined") {
       window.dispatchEvent(new Event("app:hero-ready"));
     }
-  };
-  
+  };  
 
   // load when in view OR if autoplay should be enabled on large screens immediately
   useEffect(() => {

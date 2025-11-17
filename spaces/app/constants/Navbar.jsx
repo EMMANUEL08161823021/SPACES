@@ -39,25 +39,27 @@ export default function Navbar() {
     // Close on Escape and prevent body scroll when sidebar is open
 
     const handleSearch = (q) => {
-        console.log("Search:", q);
-        // call API or route to /search?q=...
+      console.log("Search:", q);
+      // call API or route to /search?q=...
     };
     useEffect(() => {
-        function onKey(e) {
+      function onKey(e) {
+
         if (e.key === "Escape") setOpen(false);
-        }
-        if (open) {
+
+      }
+      if (open) {
         document.body.style.overflow = "hidden";
         window.addEventListener("keydown", onKey);
-        } else {
+      } else {
         document.body.style.overflow = "";
         window.removeEventListener("keydown", onKey);
-        }
-        // cleanup
-        return () => {
+      }
+      // cleanup
+      return () => {
         document.body.style.overflow = "";
         window.removeEventListener("keydown", onKey);
-        };
+      };
     }, [open]);
 
   return (
@@ -79,8 +81,8 @@ export default function Navbar() {
           
               {/* Desktop Nav */}
               <nav className="hidden md:flex items-center gap-4">
-                <ul className="flex gap-4 text-[#F3F4F6] text-sm">
-                  <a href="#movies"><li className="hover:text-primary">Movies</li></a>
+                <ul className="flex items-end gap-4 text-[#F3F4F6] text-sm">
+                  <a href="#movies"><li className="hover:text-primary mt-1">Movies</li></a>
                   <a href="#scenes"><li className="hover:text-primary">Scenes</li></a>
                   <a href="#casts"><li className="hover:text-primary">Casts</li></a>
                   <a href="#pricing"><li className="hover:text-primary">Pricing</li></a>
@@ -101,16 +103,16 @@ export default function Navbar() {
                 {/* Hamburger for mobile */}
                 
                 <button
-                    aria-label={open ? "Close menu" : "Open menu"}
-                    aria-expanded={open}
-                    aria-controls="mobile-menu"
-                    className="md:hidden p-2 rounded-md text-[#F3F4F6] focus:outline-none focus:ring-2 focus:ring-[#D6862E]"
-                    onClick={() => setOpen((s) => !s)}
+                  aria-label={open ? "Close menu" : "Open menu"}
+                  aria-expanded={open}
+                  aria-controls="mobile-menu"
+                  className="md:hidden p-2 rounded-md text-[#F3F4F6] focus:outline-none focus:ring-2 focus:ring-[#D6862E]"
+                  onClick={() => setOpen((s) => !s)}
                 >
-                    {/* simple hamburger icon */}
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d={open ? "M6 18L18 6M6 6l12 12" : "M4 7h16M4 12h16M4 17h16"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
+                  {/* simple hamburger icon */}
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d={open ? "M6 18L18 6M6 6l12 12" : "M4 7h16M4 12h16M4 17h16"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </button>
             </div>
           </div>
@@ -147,10 +149,6 @@ export default function Navbar() {
               className="fixed top-0 right-0 z-50 h-full w-[60%] max-w-[90%] bg-card shadow-lg md:hidden"
             >
               <div className="flex items-center justify-end px-4 py-3">
-                {/* <div className="flex items-center gap-2">
-                  <img src={"/assets/logo.svg"} alt="logo"/>
-                  <span className="font-bold text-lg">Saasto</span>
-                </div> */}
                 <CTAButton
                   aria-label="Close sidebar"
                   className="p-2 text-[#F3F4F6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#D6862E]"

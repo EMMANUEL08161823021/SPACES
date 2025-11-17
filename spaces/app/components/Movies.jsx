@@ -95,7 +95,6 @@ export default function Movies({ poster, title, placeholder = "/assets/default-i
                           quality={75} // tradeoff: 70-80 is usually great
                           style={{ objectFit: "cover" }}
                         />
-
                       </div>
                       <div className="p-4 flex-1 flex flex-col justify-between">
                         <div>

@@ -10,12 +10,12 @@ const Spaces = () => {
             <br/>
             <div className="w-full md:max-w-5xl mx-auto px-4">
                 {/* studio logos */}
-                <div className="flex flex-wrap items-center justify-center gap-8 opacity-40 mb-8">
-                <span className="text-sm tracking-wide"><Image className='object-cover' width={100} height={50} src={"/assets/google.svg"} alt='studio logo'/></span>
-                <span className="text-sm tracking-wide"><Image className='object-cover' width={100} height={50} src={"/assets/bloomberg.png"} alt='studio logo'/></span>
-                <span className="text-sm tracking-wide"><Image className='object-cover' width={100} height={50} src={"/assets/microsoft-1.png"} alt='studio logo'/></span>
-                <span className="text-sm tracking-wide"><Image className='object-cover' width={100} height={50} src={"/assets/coca-cola.svg"} alt='studio logo'/></span>
-                <span className="text-sm tracking-wide"><Image className='object-cover' width={100} height={50} src={"/assets/netflix.png"} alt='studio logo'/></span>
+                <div className="flex flex-wrap items-center justify-center gap-8 opacity-50 mb-8">
+                <span><Image className='object-cover' width={100} height={50} src={"/assets/google.svg"} alt='studio logo'/></span>
+                <span><Image className='object-cover' width={100} height={50} src={"/assets/bloomberg.png"} alt='studio logo'/></span>
+                <span><Image className='object-cover' width={100} height={50} src={"/assets/microsoft-1.png"} alt='studio logo'/></span>
+                <span><Image className='object-cover' width={100} height={50} src={"/assets/coca-cola.svg"} alt='studio logo'/></span>
+                <span><Image className='object-cover' width={100} height={50} src={"/assets/netflix.png"} alt='studio logo'/></span>
                 </div>
 
                 {/* heading */}
@@ -30,7 +30,7 @@ const Spaces = () => {
 
                 {/* hero */}
                 <div className="">
-                <div className="relative  rounded-2xl overflow-hidden bg-card shadow-xl">
+                <div className="relative rounded-2xl overflow-hidden bg-card shadow-xl">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                     {/* left text panel (over background) */}
                     <div className="relative p-4 md:py-20 md:px-14 flex items-center">
