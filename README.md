@@ -107,7 +107,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/EMMANUEL08161823021/spaces.git
+git clone https://github.com/EMMANUEL08161823021/SPACES.git
 ```
 
 Navigate into the project directory:
