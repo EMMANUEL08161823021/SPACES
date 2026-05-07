@@ -11,7 +11,7 @@ The project focuses on performance, reusable UI architecture, responsive design,
 Add your deployed link here:
 
 ```bash
-https://your-live-demo-link.com
+https://spaces-space.vercel.app
 ```
 
 ---
@@ -107,7 +107,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/spaces.git
+git clone https://github.com/EMMANUEL08161823021/spaces.git
 ```
 
 Navigate into the project directory:
